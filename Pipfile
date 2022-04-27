@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pycaret = "==2.3.1"
+streamlit = "==0.85.1"
+pandas = "==1.2.4"
+xlrd = "*"
+openpyxl = "*"
+geopy = "*"
+jupyterlab = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
