@@ -8,4 +8,6 @@ hexagon-example.html
 requirements.txt
 spike_app.py
 utility.py
+Pipfile.lock
+
 
