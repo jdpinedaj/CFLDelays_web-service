@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
-data/
+data/*
+!data/path_layer.html
 
 coordinates.py
 coord.py
@@ -9,5 +10,6 @@ requirements.txt
 spike_app.py
 utility.py
 Pipfile.lock
+classification_app.py
 
 
