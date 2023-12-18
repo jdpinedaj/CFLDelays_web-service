@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 from pycaret.regression import load_model, predict_model
+import os
+
+os.environ["SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL"] = "True"
+
 
 base_dir = "./"
 
