@@ -3,7 +3,7 @@ pandas>=1.2.3
 pycaret==2.3.1
 pydeck>=0.8.0
 PyYAML>=5.4.0
-scikit-learn>=0.23.1
+scikit-learn==0.23.1
 streamlit>=0.85.0
 protobuf==3.20.*
 altair<5.0
