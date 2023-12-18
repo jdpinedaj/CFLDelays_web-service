@@ -1,12 +1,15 @@
 .ipynb_checkpoints/
 data/*
 !data/path_layer.html
+model/regression_lightgbm_short_term.pkl
 
 coordinates.py
 coord.py
 logs.log
 hexagon-example.html
 Pipfile
+pyproject.toml
+poetry.lock
 spike_app.py
 utility.py
 Pipfile.lock

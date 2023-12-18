@@ -9,9 +9,3 @@ This web service allows to implement both a regression and a classification appr
 To be able to run this little bot, you need to have:
 * [Python](https://www.python.org/downloads/)
 * Install the `Requirements.txt` file.
-
-### 2. Configuration
-- #TODO
-
-### 3. Run
-- #TODO
