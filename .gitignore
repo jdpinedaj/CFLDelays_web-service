@@ -16,5 +16,8 @@ Pipfile.lock
 classification_app.py
 req_old.txt
 
+#  Secrets
+.streamlit
+
 
 
