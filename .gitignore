@@ -2,6 +2,7 @@
 data/*
 !data/path_layer.html
 model/regression_lightgbm_short_term.pkl
+__pycache__/
 
 coordinates.py
 coord.py
