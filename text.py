@@ -13,27 +13,27 @@ POSTGRESQL DATABASE SCHEMA NAME: 'public_etl'
     max_teu: The maximum number of TEUs (Twenty-foot Equivalent Units) transported in the trip.
     teu_count: The total number of TEUs transported in the trip.
     max_length: The maximum length of the train.
-    train_length: The length of the train.
-    train_weight: The weight of the train.
+    train_length: The length of the train [m].
+    train_weight: The weight of the train [t].
     planned_departure_day: The planned day of departure of the trip.
     planned_arrival_day: The planned day of arrival of the trip.
     departure_week_number: The week number of the planned departure day.
-    wagon_count: The number of wagons in the train.
-    total_distance_trip: The total distance of the trip.
-    sum_tares_wagons: The sum of the tares of the wagons.
+    wagon_count: The number of wagons in the train [wagons].
+    total_distance_trip: The total distance of the trip [km].
+    sum_tares_wagons: The sum of the tares of the wagons [t].
     departure_country: The country of departure.
     arrival_country: The country of arrival.
-    departure_delay: The delay of the departure.
-    arrival_delay: The delay of the arrival.
-    distance_between_control_stations: The distance between control stations.
-    weight_per_length_of_train: The weight per length of the train.
-    weight_per_wagon_of_train: The weight per wagon of the train.
+    departure_delay: The delay of the departure [min].
+    arrival_delay: The delay of the arrival [min].
+    distance_between_control_stations: The distance between control stations [km].
+    weight_per_length_of_train: The weight per length of the train [t/m].
+    weight_per_wagon_of_train: The weight per wagon of the train [t/wagon].
     incident_type: The type of incident.
     incident_gravity: The gravity of the incident.
     incident_customer_reason: The reason of the incident.
     month_arrival: The month of the arrival.
-    arrival_night: If the train arrived at night (yes/no).
-    peak_time: If the train arrived at peak time (yes/no).
+    arrival_night: If the train arrived at night [yes/no].
+    peak_time: If the train arrived at peak time [yes/no].
 
     first rows:
     incoterm,max_teu,teu_count,max_length,train_length,train_weight,planned_departure_day,planned_arrival_day,departure_week_number,wagon_count,total_distance_trip,sum_tares_wagons,departure_country,arrival_country,departure_delay,arrival_delay,distance_between_control_stations,weight_per_length_of_train,weight_per_wagon_of_train,incident_type,incident_gravity,incident_customer_reason,month_arrival,arrival_night,peak_time
@@ -93,5 +93,5 @@ some_examples = """
 - Give me the number of stations with more incidents in August
 - Give me the number of trains with a delay in the departure in December
 - Give me the number of trains that passed through Belgium and France in January
-- How many trains ahad a weight per length of train greater than 2.5 in February?
+- How many trains had a weight per length of train greater than 2.5 in February?
 """
