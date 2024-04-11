@@ -6,6 +6,7 @@ import os
 from utils import (
     make_predictions,
     analysis_db_llm,
+    chat_db_llm,
     MODEL,
 )
 
@@ -27,6 +28,7 @@ def main():
         [
             "Predictions",
             "Explorations_LLM",
+            "Chat_LLM",
         ],
     )
 
@@ -34,6 +36,9 @@ def main():
         make_predictions(MODEL)
     elif analysis == "Explorations_LLM":
         analysis_db_llm()
+    elif analysis == "Chat_LLM":
+        chat_db_llm()
+
     else:
         st.write("Please select an analysis")
 
