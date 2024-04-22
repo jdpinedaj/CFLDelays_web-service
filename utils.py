@@ -600,11 +600,6 @@ def _execute_all_in_chat(user_query: str) -> None:
     Returns:
         None
     """
-    # ? Check for export/save/table in the user query
-    # export_request_keywords = ["export", "save", "data in csv", "create a table"]
-    # is_export_request = any(
-    #     keyword in user_query.lower() for keyword in export_request_keywords
-    # )
 
     if "chat_history" not in st.session_state:
         st.session_state["chat_history"] = []
@@ -919,10 +914,16 @@ def chat_db_llm():
 
     if user_input:
         # Add user input to chat history to display it
-        st.session_state["chat_history"].append({"role": "user", "content": user_input})
+        st.session_state["chat_history"].append(
+            {
+                "role": "user",
+                "content": user_input,
+            }
+        )
 
-        # Process the user input
-        _execute_all_in_chat(user_input)
+        # Process the user input within a spinner to indicate thinking/loading
+        with st.spinner("Thinking..."):
+            _execute_all_in_chat(user_input)
 
     # Creating a spacer and the restart button at the bottom
     st.markdown("---")

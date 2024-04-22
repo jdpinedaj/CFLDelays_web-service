@@ -1,7 +1,6 @@
 # poetry run streamlit run regression_app.py
 
 import streamlit as st
-import pandas as pd
 import os
 from utils import (
     make_predictions,
@@ -12,14 +11,27 @@ from utils import (
 
 os.environ["SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL"] = "True"
 
+st.set_page_config(
+    page_title="CFL - Rail intermodal operation disruptions",
+    page_icon=":train:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+st.markdown(
+    """
+        <style>
+            .st-emotion-cache-1c7y2kd {
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+        </style>
+        """,
+    unsafe_allow_html=True,
+)
+
 
 def main():
-    st.set_page_config(
-        page_title="CFL - Rail intermodal operation disruptions",
-        page_icon=":train:",
-        layout="wide",
-        initial_sidebar_state="expanded",
-    )
     st.image(image="images/cfl-logo.png")
 
     # Selecting which analysis to show using buttons
