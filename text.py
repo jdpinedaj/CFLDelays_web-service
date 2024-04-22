@@ -94,5 +94,5 @@ some_examples = """
 - Give me the number of trains with a delay in the departure in December
 - Give me the number of trains that passed through Belgium and France in January
 - How many trains had a weight per length of train greater than 2.5 in February?
-- How many trains went per month?, and give me their details
+- I want an general analysis per month
 """
